@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhsongay</title>
+</head>
+<body>
+    <form>
+        <input type="number" id="month"/>
+        <input  onclick="thang()" type="submit" value="submit"/>
+        <p id="songay"></p>
+    </form>
+        <script>
+            function thang() {
+                var m = (document.getElementById('month').value);
+                switch (m) {
+                    case 1:
+                    case 3:
+                    case 5:
+                    case 7:
+                    case 8:
+                    case 10:
+                    case 12: {
+                       alert ('thang ' + m + 'co 31 ngay');
+                    break;}
+                    case 2:{
+                        alert ('thang '+ m + 'co 29 or 28 ngay');
+                        break;}
+                    default :{
+                        alert ('thang '+ m + 'co 30 ngay');
+                        break;}
+                }
+            }
+        </script>
+</body>
+
+</html>
